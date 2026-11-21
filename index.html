@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AFRO-RYTHMES · Créé par Brou Ange</title>
+<meta name="description" content="Une bibliothèque vivante du patrimoine musical africain : rythmes, instruments, histoire et cultures. Créé par Brou Ange.">
+<meta name="theme-color" content="#F6EFE0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AFRO-RYTHMES">
+<meta property="og:description" content="Rythmes, instruments, histoire et cultures musicales d’Afrique. Créé par Brou Ange.">
+<meta property="og:image" content="https://brouange22-dotcom.github.io/RYTHMIQUES-AFRICAIN-/icon.png">
+<meta property="og:url" content="https://brouange22-dotcom.github.io/RYTHMIQUES-AFRICAIN-/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM6YzJwYT0iaHR0cDovL2MycGEub3JnL21hbmlmZXN0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNCIgZmlsbD0iI0YyQTkwMCIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9IjE1IiByeD0iMTYiIHJ5PSI1LjUiIGZpbGw9IiNGNUYwRkEiLz48cGF0aCBkPSJNMTYgMTVDMTggMzAgMjUgMzQgMjUgNDNMMjIgNTZINDJMMzkgNDNDMzkgMzQgNDYgMzAgNDggMTVaIiBmaWxsPSIjMkExMjMzIi8+PHBhdGggZD0iTTIwIDIwTDMwIDMxTTQ0IDIwTDM0IDMxTTI3IDIyTDM3IDMxTTM3IDIyTDI3IDMxIiBzdHJva2U9IiNDMjdBMDAiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxtZXRhZGF0YT48YzJwYTptYW5pZmVzdD5BQUFXZ21wMWJXSUFBQUFlYW5WdFpHTXljR0VBRVFBUWdBQUFxZ0E0bTNFRFl6SndZUUFBQUJaY2FuVnRZZ0FBQUVkcWRXMWtZekp0WVFBUkFCQ0FBQUNxQURpYmNRTjFjbTQ2WXpKd1lUcGhZekl6TWpaaU55MWhaV1F5TFRRek1tTXRZbU5qT0MwellXSTBNV0UyTURkaVltRUFBQUFEbDJwMWJXSUFBQUFwYW5WdFpHTXlZWE1BRVFBUWdBQUFxZ0E0bTNFRFl6SndZUzVoYzNObGNuUnBiMjV6QUFBQUFMeHFkVzFpQUFBQVJHcDFiV1JqWW05eUFCRUFFSUFBQUtvQU9KdHhFMk15Y0dFdWFXNW5jbVZrYVdWdWRDNTJNd0FBQUFBWVl6SnphR0JnWmZKK2ExS3dCbnpZOSt5MFIzc0FBQUJ3WTJKdmNxTnBaR002Wm05eWJXRjBiV2x0WVdkbEwzTjJaeXQ0Yld4cWFXNXpkR0Z1WTJWSlJIZ3NlRzF3T21scFpEbzVaR00xT1ROaFl5MDNZMlF4TFRReFpHSXRPVEkwTXkwM01qTTVNVEZtTmpZd01EaHNjbVZzWVhScGIyNXphR2x3YUhCaGNtVnVkRTltQUFBQjRtcDFiV0lBQUFCQmFuVnRaR05pYjNJQUVRQVFnQUFBcWdBNG0zRVRZekp3WVM1aFkzUnBiMjV6TG5ZeUFBQUFBQmhqTW5Ob0NRSFhqMW9jYWtSQjVLUWNqbjNRbkFBQUFabGpZbTl5b21kaFkzUnBiMjV6Z3FKbVlXTjBhVzl1YTJNeWNHRXViM0JsYm1Wa2FuQmhjbUZ0WlhSbGNuT2hhMmx1WjNKbFpHbGxiblJ6Z2FKamRYSnNlQzF6Wld4bUkycDFiV0ptUFdNeWNHRXVZWE56WlhKMGFXOXVjeTlqTW5CaExtbHVaM0psWkdsbGJuUXVkak5rYUdGemFGZ2dMSGdqMnBsWHM5NWppYWlnL21VTkxUS2FybHFGNU90MjlVTWpxR25aREFta1ptRmpkR2x2Ym5nZFkyOXRMbUZ1ZEdoeWIzQnBZeTVqYkdGMVpHVXVjSEp2ZG1sa1pXUnFjR0Z5WVcxbGRHVnljNkY0SDJOdmJTNWhiblJvY205d2FXTXViM0pwWjJsdUxXTnZibVpwWkdWdVkyVm5kVzVyYm05M2JtdGtaWE5qY21sd2RHbHZibmhtUTJ4aGRXUmxJSEJ5YjNacFpHVmtJSFJvYVhNZ1ptbHNaU0JoZENCMGFHVWdjbVZ4ZFdWemRDQnZaaUJoSUhWelpYSWdZVzVrSUcxaGVTQm9ZWFpsSUdOeVpXRjBaV1FnYjNJZ2JXOWthV1pwWldRZ2RHaGxJR1pwYkdVZ1kyOXVkR1Z1ZEhNdWJYTnZablIzWVhKbFFXZGxiblNoWkc1aGJXVm1RMnhoZFdSbGNtRnNiRUZqZEdsdmJuTkpibU5zZFdSbFpQVUFBQURJYW5WdFlnQUFBRUJxZFcxa1kySnZjZ0FSQUJDQUFBQ3FBRGliY1JOak1uQmhMbWhoYzJndVpHRjBZUUFBQUFBWVl6SnphQjdpenVDOW14NmN0b001QllJaWcrVUFBQUNBWTJKdmNxVmpZV3huWm5Ob1lUSTFObU53WVdSTUFBQUFBQUFBQUFBQUFBQUFaR2hoYzJoWUlQb3B5VllSZktUckpzbUpMWjRJR1llTkY0M1RsS0xEcHBQVTNKUW5hZ3hRWkc1aGJXVnVhblZ0WW1ZZ2JXRnVhV1psYzNScVpYaGpiSFZ6YVc5dWM0R2laWE4wWVhKMEdRR3BabXhsYm1kMGFCa2VCQUFBQWo1cWRXMWlBQUFBSjJwMWJXUmpNbU5zQUJFQUVJQUFBS29BT0p0eEEyTXljR0V1WTJ4aGFXMHVkaklBQUFBQ0QyTmliM0tsWTJGc1oyWnphR0V5TlRacGMybG5ibUYwZFhKbGVFMXpaV3htSTJwMWJXSm1QUzlqTW5CaEwzVnlianBqTW5CaE9tRmpNak15Tm1JM0xXRmxaREl0TkRNeVl5MWlZMk00TFROaFlqUXhZVFl3TjJKaVlTOWpNbkJoTG5OcFoyNWhkSFZ5WldwcGJuTjBZVzVqWlVsRWVDeDRiWEE2YVdsa09qWmlNalppTXpreUxXRmhORGt0TkdFNE1pMWhObVZqTFRGalpHVm1NVFJtWldWbU1YSmpjbVZoZEdWa1gyRnpjMlZ5ZEdsdmJuT0RvbU4xY214NExYTmxiR1lqYW5WdFltWTlZekp3WVM1aGMzTmxjblJwYjI1ekwyTXljR0V1YVc1bmNtVmthV1Z1ZEM1Mk0yUm9ZWE5vV0NBc2VDUGFtVmV6M21PSnFLRCtaUTB0TXBxdVdvWGs2M2IxUXlPb2Fka01DYUpqZFhKc2VDcHpaV3htSTJwMWJXSm1QV015Y0dFdVlYTnpaWEowYVc5dWN5OWpNbkJoTG1GamRHbHZibk11ZGpKa2FHRnphRmdnVUc5QUNHdmx6MHNKaHc0eS9xTFMxSFYyL2ZlRUtqYkNRMFdUWUJFTkVnV2lZM1Z5YkhncGMyVnNaaU5xZFcxaVpqMWpNbkJoTG1GemMyVnlkR2x2Ym5Ndll6SndZUzVvWVhOb0xtUmhkR0ZrYUdGemFGZ2dSQjdIMFd6SGllb3pSTmw3M3U5U2sxT2FITWFWMmViSk84L2xzQk93b3g1MFkyeGhhVzFmWjJWdVpYSmhkRzl5WDJsdVptK2paRzVoYldWdlFXNTBhSEp2Y0dsaklFWnBiR1Z6WjNabGNuTnBiMjVsTVM0d0xqQnJjM0JsWTFabGNuTnBiMjVsTWk0MExqQUFBQkE0YW5WdFlnQUFBQ2hxZFcxa1l6Smpjd0FSQUJDQUFBQ3FBRGliY1FOak1uQmhMbk5wWjI1aGRIVnlaUUFBQUJBSVkySnZjdEtFV1FJU29nRW1HQ0ZaQWdvd2dnSUdNSUlCamFBREFnRUNBaFJBNWFBSzdzSTUwTDY0Zy9vR1FnVTlaMVVUQURBS0JnZ3Foa2pPUFFRREF6QkpNUmN3RlFZRFZRUUtFdzVCYm5Sb2NtOXdhV01zSUZCQ1F6RXVNQ3dHQTFVRUF4TWxRVzUwYUhKdmNHbGpJRU52Ym5SbGJuUWdRM0psWkdWdWRHbGhiSE1nVW05dmRDQkRRVEFlRncweU5qQTRNRGN4T0RRek5UWmFGdzB5T0RBNE1EWXhPVFF6TlRaYU1FUXhGekFWQmdOVkJBb1REa0Z1ZEdoeWIzQnBZeXdnVUVKRE1Ta3dKd1lEVlFRREV5QkJiblJvY205d2FXTWdRMnhoZFdSbElFTnZiblJsYm5RZ1UybG5ibWx1WnpCWk1CTUdCeXFHU000OUFnRUdDQ3FHU000OUF3RUhBMElBQkpoNkNtdkxVQmdGRk5VMHZVS2xPVnRFNmRqZDE3TDVTdXdYMExlbUZpc0JNM2RrZC8zY3lqeEZBM1FvNVM0NmZYMC9paFkwVlo3bWZiOUtGNzAzdDVPaldEQldNQTRHQTFVZER3RUIvd1FFQXdJSGdEQVZCZ05WSFNVRURqQU1CZ29yQmdFRUFZUG9YZ0lCTUF3R0ExVWRFd0VCL3dRQ01BQXdId1lEVlIwakJCZ3dGb0FVemxIaUJJRk9aRnNqK09QRXo1bytuTUhYWE1Jd0NnWUlLb1pJemowRUF3TURad0F3WkFJd01YTWRGSjRCZXRMTFZZN09SdUU5bm9xYmJBWk9abi9hQXJYeVR3RkFaZktyUHp4RjJ2UG9KTmYxK1VDZGcxWEdBakJ3WDF6ZDlXR3FZa3FtTDVTRnF3MVF5U2pyMXpKZnBKTTkrMXJkRHdTUExNT1BPakt1aVhqb1UvcFVVZUc5UndtaFkzQmhaRmtObmdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQWllRRTUvdmdYSEJXbkpWWlk3c3RFcFpQTTYvVWp4REozclZSL0RySXV6eCtFMGJPTUF4YTFOWEd3YXY2M3Y3OENmNmVZcHUzbTlGOWc2OWpTK1h6emw2WnM9PC9jMnBhOm1hbmlmZXN0PjwvbWV0YWRhdGE+PC9zdmc+">
+<link rel="apple-touch-icon" href="icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EFE0;--ink:#3B2A1E;--soft:#6E5B4B;--a:#B5532D;--b:#2F5D45;--gold:#B8892B;--onA:#FFFFFF;--card:#FFFBF2;--line:#E2D5BC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C1712;--ink:#F1E8D6;--soft:#B9A88F;--a:#D9794E;--b:#6FB08A;--gold:#D9AE55;--onA:#1C1712;--card:#272017;--line:#40352A}}
+:root[data-theme="dark"]{--bg:#1C1712;--ink:#F1E8D6;--soft:#B9A88F;--a:#D9794E;--b:#6FB08A;--gold:#D9AE55;--onA:#1C1712;--card:#272017;--line:#40352A}
+*{box-sizing:border-box}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.55}
+main{max-width:720px;margin:0 auto;padding:28px 20px 48px}
+h1{font-size:clamp(2.2rem,9vw,3.6rem);line-height:1;margin:0 0 12px;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.5rem;margin:32px 0 12px}
+.lead{color:var(--soft);max-width:34em;margin:0 0 20px}
+a{color:inherit}
+.ring{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.ring svg{width:min(100%,280px);height:auto}
+.ring p{margin:0;font-size:.92rem;color:var(--soft);text-align:center;max-width:30em}
+button{font:inherit;cursor:pointer}
+.play{background:var(--a);color:var(--onA);border:0;border-radius:999px;padding:10px 22px;font-weight:600}
+.play:focus-visible,.chip:focus-visible,a:focus-visible{outline:3px solid var(--b);outline-offset:2px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.chip{flex:none;background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px}
+.chip[aria-pressed="true"]{background:var(--b);border-color:var(--b);color:#FFFFFF}
+.list{margin-top:12px}
+.card{display:block;text-decoration:none;padding:14px 0;border-top:1px solid var(--line)}
+.card h3{margin:0;font-size:1.2rem}
+.card span{color:var(--soft);font-size:.92rem}
+.card:hover h3{color:var(--a)}
+.back{display:inline-block;margin-bottom:18px;font-weight:600;color:var(--b)}
+.tag{color:var(--a);font-weight:600;margin:0 0 18px}
+dl{margin:20px 0;border-top:1px solid var(--line)}
+dl div{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+dt{flex:0 0 120px;color:var(--soft);font-weight:600}
+dd{margin:0}
+.txt{font-size:1.08rem;max-width:34em}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:32px;font-weight:600}
+footer{margin-top:36px;color:var(--soft);font-size:.9rem}
+.by{color:var(--a);font-weight:600;margin:0 0 20px}
+.note{color:var(--soft);font-style:italic;margin-top:24px}
+.src{padding-left:20px;font-size:.95rem}
+.src li{margin:8px 0}
+.logo{width:56px;height:56px;border-radius:16px;background:var(--a);display:flex;align-items:center;justify-content:center;font-size:30px;margin-bottom:14px}
+@media (prefers-reduced-motion:no-preference){.dot{transition:r .12s}}
+
+h1,h2,h3{font-family:Fraunces,Georgia,serif}
+.logo{border:2px solid var(--gold)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+#bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 12px;display:flex;gap:8px;align-items:center}
+.navrow{display:flex;gap:6px;overflow-x:auto;flex:1}
+.nv{flex:none;padding:8px 12px;border-radius:999px;text-decoration:none;font-size:.92rem}
+.nv[aria-current="page"]{background:var(--b);color:#FFFFFF}
+.ctl{display:flex;gap:6px}
+.cb{background:transparent;border:1.5px solid var(--line);color:var(--ink);border-radius:10px;padding:6px 10px}
+.srch{width:100%;margin:6px 0 14px;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);font:inherit}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+.tile{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.tile h3{margin:0 0 4px;font-size:1.05rem}
+.tile span{color:var(--soft);font-size:.9rem}
+.card .badge{margin-left:8px;color:var(--b);border:1px solid var(--b);border-radius:999px;padding:1px 8px;font-size:.75rem;font-weight:600;vertical-align:middle}
+.card p{margin:6px 0 0;color:var(--soft)}
+.fav{background:transparent;border:1.5px solid var(--gold);color:var(--ink);border-radius:999px;padding:8px 16px;margin-bottom:8px}
+.audio{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.audio audio{width:100%;margin:8px 0}
+.audio h3{margin:0}
+.audio span{display:block;color:var(--soft);font-size:.9rem}
+</style>
+</head>
+<body>
+<header id="bar"></header><main id="app"></main>
+<script>
+var REG=["Afrique de l’Ouest","Afrique centrale","Afrique de l’Est","Afrique australe","Afrique du Nord"];
+// slug, nom, région, pays, époque, instruments, texte, artistes
+var R=[
+["dununba","Dununba",0,"Guinée, Mali","Tradition ancienne","Djembé, trois dunun, cloches","Rythme emblématique des Mandingues, joué par trois dunun de tailles différentes qui dialoguent avec le djembé. On le présente souvent comme la danse des hommes forts.","Mamady Keïta"],
+["highlife","Highlife",0,"Ghana, Nigeria","Début du XXe siècle","Guitares, cuivres, percussions","Né sur la côte ouest-africaine, il associe mélodies de guitare, cuivres et percussions locales. Il accompagne les fêtes et les clubs, d’Accra à Lagos.","E. T. Mensah, Osita Osadebe"],
+["afrobeat","Afrobeat",0,"Nigeria","Fin des années 1960","Batterie, cuivres, claviers, percussions","Fela Kuti le développe en mêlant highlife, jazz, funk et percussions yoruba. Ses morceaux sont longs, hypnotiques, et portent souvent un message politique.","Fela Kuti, Tony Allen"],
+["mbalax","Mbalax",0,"Sénégal","Années 1970–80","Tambours sabar, guitares, claviers","Rythme sénégalais construit sur les tambours sabar, très présents dans les musiques wolof. Il a été popularisé dans le monde par Youssou N’Dour.","Youssou N’Dour, Thione Seck"],
+["zaouli","Zaouli",0,"Côte d’Ivoire (Gouro)","Tradition gouro","Tambours, chants, masque","Danse masquée des Gouro, célèbre pour des pas d’une rapidité extraordinaire.","Communautés gouro"],
+["ziglibithy","Ziglibithy",0,"Côte d’Ivoire (pays bété)","Années 1970","Guitare électrique, batterie, percussions","Style inspiré de la musique des Bété, fait pour la danse.","Ernesto Djédjé"],
+["zouglou","Zouglou",0,"Côte d’Ivoire","Années 1990","Voix, guitare, percussions","Musique d’étudiants née à Abidjan, qui raconte la vie avec humour.","Les Parents du Campus, Magic System, Yodé et Siro"],
+["coupe-decale","Coupé-décalé",0,"Côte d’Ivoire","Début des années 2000","Boîtes à rythmes, synthétiseurs, voix","Musique de danse née dans la diaspora ivoirienne à Paris, avec des rythmes électroniques.","Douk Saga, DJ Arafat"],
+["gelede","Gèlèdè",0,"Nigeria, Bénin, Togo","Depuis plus d’un siècle","Tambours, orchestre, chants","Cérémonie yoruba-nago de masques, de chants et de danses qui honore la mère primordiale et les femmes.","Troupes gèlèdè yoruba-nago"],
+["tchinkoume","Tchinkoumé",0,"Bénin","Tradition ancienne ; modernisé dans les années 1980","Percussions, chants","Rythme traditionnel béninois, lié à l’origine aux funérailles, devenu aussi une musique de fête.","Tohon Stan (Tchink System)"],
+["balafon-senoufo","Balafon sénoufo (ncegele)",0,"Côte d’Ivoire, Mali, Burkina Faso","Tradition sénoufo","Balafon à calebasses, baguettes","Xylophone pentatonique des communautés sénoufo, qui accompagne fêtes, rites et funérailles.","Communautés sénoufo"],
+["rumba","Rumba congolaise",1,"RDC, Congo-Brazzaville","XXe siècle","Guitares, voix, section rythmique","Née dans la région du fleuve Congo, elle mêle traditions locales et influences cubaines. Elle est inscrite au patrimoine culturel immatériel de l’UNESCO depuis 2021.","Grand Kallé, Franco"],
+["soukous","Soukous",1,"RDC","Années 1960–80","Guitares, basse, batterie","Dérivé de la rumba, il accélère le tempo et met en avant des guitares aux motifs rapides. Il a fait danser toute l’Afrique, puis les clubs d’Europe.","Kanda Bongo Man, Tabu Ley Rochereau"],
+["makossa","Makossa",1,"Cameroun","Années 1960–70","Basse, guitares, cuivres, batterie","Style de Douala porté par une basse dansante et des cuivres. Le titre « Soul Makossa » de Manu Dibango (1972) l’a fait connaître au-delà de l’Afrique.","Manu Dibango, Petit Pays"],
+["taarab","Taarab",2,"Zanzibar, côte swahilie","Fin du XIXe siècle","Oud, qanûn, violons, percussions","Musique swahilie qui mêle influences arabes, indiennes et africaines. Les paroles poétiques parlent souvent d’amour et de la vie quotidienne.","Siti binti Saad, Bi Kidude"],
+["benga","Benga",2,"Kenya","Années 1950–60","Guitares, basse, percussions","Style des Luo, qui repose sur des guitares rapides et des motifs répétés. On l’associe aux orchestres de Nairobi et de la région du lac Victoria.","D. O. Misiani"],
+["ethiojazz","Éthio-jazz",2,"Éthiopie","À partir des années 1960","Vibraphone, orgue, cuivres, percussions","Mulatu Astatke l’a imaginé en combinant jazz, rythmes latins et gammes traditionnelles éthiopiennes. Le résultat est un son à la fois planant et dansant.","Mulatu Astatke, Hailu Mergia"],
+["mbaqanga","Mbaqanga",3,"Afrique du Sud","Années 1960","Guitare, basse, saxophone, voix","Né dans les townships, il mélange mélodies zouloues, jazz et rythmes urbains. Les chœurs de voix et la basse y tiennent une place centrale.","Mahlathini et les Mahotella Queens"],
+["gqom","Gqom",3,"Afrique du Sud (Durban)","Années 2010","Boîtes à rythmes, ordinateur","Né à Durban, il se caractérise par des rythmes sombres, minimalistes et très percussifs, faits pour la danse. Il se fabrique surtout sur ordinateur.","Distruction Boyz, DJ Lag"],
+["gnawa","Gnawa",4,"Maroc","Tradition ancienne","Guembri, qraqeb, voix","Musique de transe rituelle issue des confréries gnaoua. Elle repose sur un luth basse, des castagnettes métalliques et des chants répétés.","Maâlem Mahmoud Guinia"],
+["rai","Raï",4,"Algérie (Oran)","XXe siècle","Voix, synthétiseur, percussions","Chanson populaire née dans l’ouest algérien, longtemps jouée dans les cabarets. Elle est devenue connue dans le monde entier dans les années 1980–90.","Cheb Khaled, Cheb Mami"]
+];
+var H={
+gelede:"Le Gèlèdè est pratiqué par la communauté yoruba-nago, répartie entre le Bénin, le Nigeria et le Togo. Selon l’UNESCO, cette cérémonie rend hommage depuis plus d’un siècle à la mère primordiale, Iyà Nlà, et au rôle des femmes dans l’organisation de la société yoruba. Elle se déroule la nuit sur une place publique : les chanteurs et un tambourinaire apparaissent d’abord, avec un orchestre, puis viennent les danseurs masqués.",
+tchinkoume:"Le tchinkoumé (écrit aussi tchinkoumin, tchingounmin ou tchinkounmè) est un rythme traditionnel du Bénin. Selon plusieurs sources, il est lié au pays mahi, dans le centre du pays, autour de Savalou, et servait à l’origine aux cérémonies funéraires. Il est devenu ensuite aussi une musique de fête. Dans les années 1980, l’artiste Tohon Stan l’a modernisé avec des instruments électriques : c’est le Tchink System.",
+"balafon-senoufo":"Le balafon des communautés sénoufo du Mali, du Burkina Faso et de la Côte d’Ivoire est un xylophone pentatonique appelé localement ncegele. Selon l’UNESCO, il rythme la vie des communautés : il accompagne des rites agricoles et des cérémonies d’initiation, anime les fêtes, accompagne des prières, notamment dans les bois sacrés, encourage au travail et ponctue la musique funéraire. L’apprenti commence sur un balafon d’enfant, puis passe à un instrument de taille normale auprès d’un maître.",
+zaouli:"Le zaouli appartient aux Gouro, une communauté du centre de la Côte d’Ivoire. C’est une danse et une musique portées par un masque, dont le danseur exécute des pas incroyablement rapides sur des rythmes de tambours. Il est joué lors de fêtes et de cérémonies. L’UNESCO l’a inscrit à son patrimoine culturel immatériel en 2017.",
+ziglibithy:"Le ziglibithy est créé dans les années 1970 par Ernesto Djédjé, originaire de Gagnoa. Il s’inspire des rythmes traditionnels bété et les joue avec des guitares électriques et une batterie. Djédjé le fait connaître dans toute la Côte d’Ivoire : c’est l’une des musiques ivoiriennes les plus marquantes de cette époque.",
+zouglou:"Le zouglou naît en 1990 sur le campus de l’université d’Abidjan, créé par des étudiants. Ils chantent en groupe, avec des voix, des percussions et parfois une guitare, des textes humoristiques sur la vie quotidienne, les difficultés des étudiants et la société. Des groupes comme Les Parents du Campus, puis Magic System et Yodé et Siro, le font connaître dans le pays et au-delà.",
+"coupe-decale":"Le coupé-décalé apparaît au début des années 2000 dans les clubs de Paris, au sein de la diaspora ivoirienne. Douk Saga et ses amis le lancent comme une musique de fête, avec des pas de danse faciles à imiter. Il revient ensuite à Abidjan et devient très populaire en Afrique de l’Ouest, avec des artistes comme DJ Arafat.",
+dununba:"Le dununba vient du monde mandingue, une vaste zone d’Afrique de l’Ouest liée à l’ancien empire du Mali. Il se joue pour des fêtes et des cérémonies, et met en avant la force et le courage. Au XXe siècle, des ensembles comme les Ballets africains de Guinée ont fait connaître le djembé et ces rythmes à l’étranger. Aujourd’hui, des percussionnistes comme Mamady Keïta les enseignent dans le monde entier.",
+highlife:"Le highlife apparaît sur la côte du Ghana au début du XXe siècle, quand les guitares, les fanfares et les chants locaux se rencontrent. Son nom évoque les clubs où l’élite venait danser. Dans les années 1950, E. T. Mensah, surnommé le roi du highlife, le rend très populaire. Il gagne ensuite le Nigeria, où il inspire de nombreux orchestres, et il sert de base à l’afrobeat.",
+afrobeat:"Fela Kuti naît en 1938 au Nigeria. Après des études de musique à Londres, il découvre à Los Angeles, en 1969, les idées du mouvement noir américain. De retour à Lagos, il invente l’afrobeat avec le batteur Tony Allen. Ses concerts, au club le Shrine, durent des heures. Ses paroles critiquent le pouvoir et les injustices, et son influence dépasse aujourd’hui largement le Nigeria.",
+mbalax:"Dans les années 1960, la musique afro-cubaine est très écoutée à Dakar. Peu à peu, des musiciens sénégalais se tournent vers leurs propres traditions, en particulier le sabar, le tambour des fêtes wolof. Dans les années 1970-80, des groupes comme l’Étoile de Dakar de Youssou N’Dour mêlent ces tambours à des guitares et des claviers électriques : c’est le mbalax, mot qui désigne à l’origine l’accompagnement rythmique.",
+rumba:"À partir des années 1930-40, des disques cubains circulent à Kinshasa et Brazzaville et se mêlent aux rythmes locaux de chaque côté du fleuve Congo. Dans les années 1950-60, des orchestres comme African Jazz de Grand Kallé et l’OK Jazz de Franco la rendent immensément populaire. En 1960, « Indépendance Cha Cha » accompagne l’indépendance du Congo. L’UNESCO a inscrit la rumba congolaise à son patrimoine immatériel en 2021.",
+soukous:"Le mot vient du français « secouer ». Dans les années 1960-70, des musiciens comme Tabu Ley Rochereau et Dr Nico transforment la rumba, avec un tempo plus rapide et des guitares plus brillantes. Le sebene, longue partie de guitare propice à la danse, en devient la marque. Dans les années 1980, de nombreux artistes s’installent à Paris et font connaître le soukous en Europe.",
+makossa:"Le makossa naît à Douala, dans la communauté duala, et son nom évoque la danse. Dans les années 1960-70, des artistes comme Eboa Lotin lui donnent sa forme moderne. En 1972, « Soul Makossa » de Manu Dibango devient un succès à New York. Son refrain sera repris plus tard par Michael Jackson dans « Wanna Be Startin’ Somethin’ ».",
+taarab:"Le taarab naît à Zanzibar à la fin du XIXe siècle. Le sultan Barghash encourage une musique de cour inspirée de l’Égypte, qui se mêle ensuite aux traditions swahilies et indiennes. Son nom vient d’un mot arabe qui désigne l’émotion que provoque la musique. Dans les années 1920, la chanteuse Siti binti Saad enregistre en swahili et devient la première grande voix du genre.",
+benga:"Le benga naît chez les Luo, près du lac Victoria, dans les années 1950-60. Des guitaristes y adaptent à la guitare les motifs du nyatiti, la lyre traditionnelle luo. Le style est ensuite repris à Nairobi. D. O. Misiani et son groupe Shirati Jazz en sont des figures majeures, avec des paroles qui commentent la vie sociale et politique.",
+ethiojazz:"Mulatu Astatke, né à Jimma en 1943, étudie la musique à Londres puis aux États-Unis, où il découvre le jazz et les rythmes latins. De retour à Addis-Abeba, il les associe aux modes éthiopiens, des gammes à cinq notes comme le tezeta ou l’ambassel. La série de disques Éthiopiques et le film « Broken Flowers » (2005) ont fait découvrir ce son au monde entier.",
+mbaqanga:"Le mbaqanga naît dans les townships de Johannesburg dans les années 1960, à partir du marabi, du jazz et des mélodies zouloues. Son nom est un mot zoulou qui désigne un pain cuit à la vapeur. Sous l’apartheid, cette musique urbaine accompagne la vie quotidienne des townships. Mahlathini, surnommé le Lion de Soweto, et les Mahotella Queens l’ont fait connaître bien au-delà de l’Afrique du Sud.",
+gqom:"Le gqom apparaît au début des années 2010 dans les townships de Durban, comme Umlazi. De jeunes producteurs fabriquent des rythmes sur ordinateur avec des logiciels accessibles et les partagent par téléphone. Le mot vient du zoulou et évoque le tambour ou le choc. Sa basse lourde et son rythme sec ont ensuite voyagé jusque dans les clubs du monde entier.",
+gnawa:"Les Gnawa sont des confréries du Maroc, descendantes de personnes d’Afrique subsaharienne amenées de force au Maghreb. Leur musique sert dans la lila, une cérémonie de nuit, de transe et de guérison, qui mêle héritages africains et spiritualité soufie. Elle se joue en cycles, avec couleurs, encens et danses. Depuis 1998, le festival d’Essaouira lui donne une grande scène.",
+rai:"Le mot raï signifie « opinion » en arabe. Il naît autour d’Oran, dans les chants des bergers et des cheikhat, chanteuses populaires comme Cheikha Rimitti, qui abordent sans détour la vie, l’amour et la liberté. Dans les années 1970-80, les jeunes y ajoutent synthétiseurs et boîtes à rythmes. Cheb Khaled et Cheb Mami le font connaître dans le monde entier."};
+var S={
+gelede:"Selon l’UNESCO, le Gèlèdè est la seule société de masques connue qui soit aussi dirigée par des femmes. Pour les pratiquants, il s’agit d’honorer le pouvoir spirituel des « mères » et d’apaiser la communauté. Ces croyances relèvent de la tradition yoruba.",
+tchinkoume:"Dans la tradition mahi, le rythme accompagne le deuil et vise à chasser le mauvais sort après un décès, selon les sources consultées. Cette dimension relève des croyances des communautés.",
+"balafon-senoufo":"Selon l’UNESCO, le balafon donne le rythme de la vie des communautés sénoufo et transmet un système de valeurs. Il donne à chacun, des plus jeunes aux plus âgés, un sentiment d’identité et de continuité.",
+zaouli:"Dans la tradition gouro, le masque n’est pas un simple costume : il porte une histoire et un rôle dans la communauté. La danse est vécue comme un moment de beauté, de fierté et de transmission entre générations.",
+ziglibithy:"Le ziglibithy a donné à la jeunesse ivoirienne une musique moderne tout en gardant des racines bété. C’est une façon de faire entendre les traditions dans un son nouveau.",
+zouglou:"Le zouglou est une musique de parole : on y raconte la vie, on dénonce des injustices et on rit ensemble des difficultés du quotidien. C’est un espace d’expression pour la jeunesse.",
+"coupe-decale":"Musique de fête et de joie, le coupé-décalé a aussi été un moyen de se retrouver et d’exprimer sa fierté ivoirienne. Ses danses se partagent facilement, ce qui en fait un langage commun pour la jeunesse.",
+dununba:"Dans les sociétés mandingues, le djembé et les dunun accompagnent initiations, mariages et récoltes. Le rythme y est un langage partagé : il rassemble la communauté et transmet des valeurs comme la force et le courage.",
+highlife:"Ce n’est pas une musique rituelle, mais une musique de fête, de rencontre et d’identité. Au Ghana, elle a accompagné l’époque de l’indépendance, en 1957.",
+afrobeat:"C’est avant tout une musique de résistance et de prise de parole. Fela Kuti a nommé son club le Shrine, un mot qui évoque les lieux sacrés, et il s’est réclamé des spiritualités africaines traditionnelles.",
+mbalax:"Le sabar rythme traditionnellement les baptêmes, les mariages et les fêtes de quartier au Sénégal. Ses tambours « parlent » : certains rythmes servent à saluer, à appeler ou à honorer une personne.",
+rumba:"La rumba parle d’amour, de vie quotidienne et de liberté. Autour des indépendances, elle est devenue un symbole de fierté pour les peuples du Congo.",
+soukous:"Musique de joie et de danse, elle rassemble les gens autour de la fête. Son énergie est avant tout sociale : elle fait danser et se retrouver.",
+makossa:"Musique de danse et de fête urbaine, elle a donné une voix à la vie des quartiers de Douala. Elle célèbre le plaisir de se retrouver et de danser ensemble.",
+taarab:"Le taarab est joué surtout lors des mariages et des fêtes à Zanzibar et sur la côte swahilie. Ses poèmes chantés transmettent des conseils, des émotions et des histoires de la vie quotidienne.",
+benga:"Musique de danse et de commentaire social, le benga fait entendre l’humour, les histoires et les préoccupations du quotidien.",
+ethiojazz:"Les gammes éthiopiennes qu’il utilise portent des émotions précises : le tezeta, par exemple, évoque la mémoire et la nostalgie. La musique devient un moyen de raconter une identité.",
+mbaqanga:"Musique des townships, elle a exprimé la vie quotidienne, la joie et la dignité de ses habitants sous l’apartheid. Les voix y racontent le quotidien et la mémoire collective.",
+gqom:"Musique de la jeunesse des townships, le gqom est un espace d’expression et de fête. Elle est née de la débrouillardise : on la crée avec peu de moyens et on la partage ensemble.",
+gnawa:"C’est l’une des musiques les plus liées au spirituel. Dans la lila, selon la tradition, on invoque des esprits appelés mlouk, associés à des couleurs, des encens et des danses. Pour les participants, cette musique a une fonction de guérison spirituelle.",
+rai:"Le raï est surtout une musique de liberté d’expression : il parle sans détour d’amour et de la vie, parfois de sujets que d’autres chants évitent. Des chanteuses comme Cheikha Rimitti l’ont porté avec courage."};
+var D={
+zaouli:{o:"Le zaouli est une musique et une danse populaires des communautés gouro, dans les départements de Bouaflé et de Zuénoula, au centre-ouest de la Côte d’Ivoire. Selon l’UNESCO, il rend hommage à la beauté féminine et s’inspire de deux masques, le Blou et le Djela. Son autre nom, Djela lou Zaouli, signifie « Zaouli, la fille de Djela ». Une seule représentation réunit sculpture (le masque), tissage (le costume), musique (l’orchestre et le chant) et danse.",f:"Selon l’UNESCO, le zaouli joue un rôle éducatif, ludique et esthétique, exprime l’identité culturelle de ses porteurs et favorise l’intégration et la cohésion sociale. D’après Wikipédia, chaque village gouro a son danseur de zaouli, toujours un homme, qui se produit lors de funérailles et de fêtes.",e:"Le zaouli est inscrit depuis 2017 sur la Liste représentative du patrimoine culturel immatériel de l’humanité. Selon l’UNESCO, des spectacles populaires sont organisés deux ou trois fois par semaine par les communautés, et des compétitions et festivals entre villages ainsi que les chefferies traditionnelles soutiennent sa transmission.",d:"L’origine du masque est discutée. Une version courante le dit créé dans les années 1950 et inspiré par une jeune fille d’une grande beauté nommée Djela Lou Zaouli, mais les récits varient et chaque masque peut avoir sa propre histoire. L’UNESCO précise qu’il existe sept types de masques, chacun traduisant une légende précise.",s:[["UNESCO : Zaouli, musique et danse populaires des communautés gouro (inscription 2017)","https://ich.unesco.org/en/RL/zaouli-popular-music-and-dance-of-the-gouro-communities-of-cote-divoire-01255"],["UNESCO : décision 12.COM 11.B.8","https://ich.unesco.org/en/decisions/12.COM/11.B.8"],["Honorat Gilles Kouisoa, Abidjan.net","https://news.abidjan.net/h/630284.html"],["Wikipédia : Zaouli (informations complémentaires)","https://en.wikipedia.org/wiki/Zaouli"]]},
+gelede:{o:"Le Gèlèdè est pratiqué par la communauté yoruba-nago établie au Bénin, au Nigeria et au Togo. Il se caractérise par des masques sculptés, des danses et des chants en langue yoruba qui transmettent l’histoire et les mythes du peuple. Une analyse présentée par le musée Carlos (Université Emory) explique son nom par l’idée d’apaiser et de ménager les femmes âgées, appelées « nos mères ».",f:"Il rend hommage aux mères et au rôle des femmes dans l’organisation sociale. Il a lieu chaque année après les récoltes, lors d’événements importants et en cas de sécheresse ou d’épidémie. Les chants mêlent poésie épique et lyrique, ironie et satire, et transmettent un patrimoine oral.",e:"L’UNESCO l’a proclamé chef-d’œuvre du patrimoine oral et immatériel de l’humanité en 2001, puis l’a inscrit en 2008 sur la Liste représentative. Selon l’UNESCO, l’évolution technique fait disparaître peu à peu des savoir-faire traditionnels et le tourisme tend à en faire un produit folklorique, mais la communauté reste très attachée à ce patrimoine.",d:"Certaines sources situent la naissance du festival au début du XIXe siècle, alors que l’UNESCO parle d’une pratique de plus d’un siècle. Le pouvoir spirituel attribué aux « mères » relève des croyances yoruba : il ne doit pas être présenté comme un fait scientifique. Les instruments précis varient selon les communautés et restent à documenter pour cette fiche.",s:[["UNESCO : Gèlèdè (version française)","https://ich.unesco.org/fr/RL/lheritage-oral-gelede-00002"],["UNESCO : Oral heritage of Gelede","https://ich.unesco.org/en/RL/gelede-oral-heritage-00002"],["Carlos Museum (Emory University) sur Google Arts & Culture","https://artsandculture.google.com/asset/efe-gelede-headdress-apasa/wgHgzN1BBenbaQ"],["Babatunde Lawal, The Gelede Spectacle (University of Washington Press, 1996)",null]]},
+tchinkoume:{o:"Selon un article de l’agence IPS (1998), le tchinkoumin est un rythme traditionnel de la région centrale du Bénin, à Savalou, qui ne se jouait à l’origine qu’aux cérémonies funéraires, d’après un sage de la ville. D’autres sources le décrivent comme un rythme de funérailles mahi, joué pour chasser le mauvais sort après un décès.",f:"À l’origine, il accompagne le deuil. Il est devenu aussi une musique et une danse de fête. Des chercheurs béninois l’ont étudié comme rythme, danse et chants du pays mahi.",e:"Dans les années 1980, le chanteur Tohon Stan l’a mêlé à des instruments modernes pour créer le Tchink System, présenté en 1998 comme l’un des rares rythmes béninois issus d’un mélange entre instruments traditionnels et modernes. De nombreux artistes béninois l’ont ensuite adopté.",d:"Les sources ne s’accordent ni sur la région d’origine ni sur l’orthographe. Plusieurs le situent chez les Mahi, autour de Savalou (centre du Bénin) ; un site de documentation musicale en ligne le rattache aux communautés fon et goun du sud ; un article universitaire le range parmi les danses de l’aire culturelle adja-tado pratiquées par les Fon et leurs apparentés. Cette fiche le présente donc comme un rythme du Bénin, de tradition mahi selon les sources les plus nombreuses, en attendant des travaux d’ethnomusicologie plus complets. Les instruments exacts restent à documenter, certaines sources évoquant une percussion sur l’eau.",s:[["IPS : Un rythme traditionnel en passe de devenir une danse nationale (1998)","https://ipsnews.net/francais/1998/10/23/musique-benin-un-rythme-traditionnel-en-passe-de-devenir-une-danse-nationale/"],["Sylvie Clerfeuille, Afrisson","https://afrisson.com/?p=9972"],["Étude de l’Université d’Abomey-Calavi sur Zinli, Tchinkounmè et Akonhoun","https://bec.uac.bj/uploads/publication/da7a395e14d46791879f564072693ace.pdf"],["Melodigging : Tchinkoumé","https://www.melodigging.com/genre/tchinkoume"],["Wikipédia : Music of Benin","https://en.wikipedia.org/wiki/Music_of_Benin"]]},
+"balafon-senoufo":{o:"Le ncegele est un balafon pentatonique : selon l’UNESCO, l’octave y est divisée en cinq intervalles égaux. Il compte de onze à vingt et une lames de bois montées sur un cadre. Il se joue en solo ou en ensemble, avec un discours musical fondé sur de multiples mélodies rythmiques.",f:"Selon l’UNESCO, il accompagne des événements importants comme les rites agricoles et les cérémonies d’initiation, anime les fêtes, accompagne des prières, stimule l’ardeur au travail et ponctue la musique funéraire. Il sert aussi à enseigner des valeurs, des traditions, des croyances, le droit coutumier et des règles d’éthique.",e:"Les pratiques liées au balafon sénoufo ont été inscrites sur la Liste représentative en 2011 pour le Mali et le Burkina Faso, étendues à la Côte d’Ivoire en 2012, puis intégrées en 2024 à une inscription élargie avec le kolintang d’Indonésie.",d:"Les sources consultées ne datent pas précisément l’origine du balafon sénoufo : elle reste à documenter. D’autres peuples d’Afrique de l’Ouest jouent aussi du balafon, avec des accordages et des usages différents : cette fiche ne concerne que la tradition sénoufo.",s:[["UNESCO : balafon des communautés sénoufo","https://ich.unesco.org/en/RL/00849"],["UNESCO : décision 6.COM 13.29 (2011)","https://ich.unesco.org/en/decisions/6.COM/13.29"],["UNESCO : décision 7.COM 11.21 (2012)","https://ich.unesco.org/en/decisions/7.COM/11.21"],["UNESCO : balafon et kolintang (2024)","https://ich.unesco.org/en/RL/cultural-practices-and-expressions-linked-to-balafon-and-kolintang-in-mali-burkina-faso-cote-d-ivoire-and-indonesia-02131?RL=02131"]]}
+};
+function deep(k){var d=D[k];if(!d){el("p","note","Fiche en cours d’enrichissement : les informations de cette page restent à vérifier avec des sources.",app);return}
+[["Origine et contexte",d.o],["Fonction dans la société",d.f],["Évolution et aujourd’hui",d.e],["Ce qui est discuté",d.d]].forEach(function(x){if(x[1]){el("h2",0,x[0],app);el("p","txt",x[1],app)}});}
+function srcs(k){var d=D[k];if(!d)return;
+el("h2",0,"Sources consultées",app);var ul=el("ul","src",0,app);d.s.forEach(function(s){var li=el("li",0,0,ul);if(s[1]){var a=el("a",0,s[0],li);a.href=s[1];a.target="_blank";a.rel="noopener"}else{li.textContent=s[0]}})}
+var I={
+gelede:[["Tambours","Un joueur de tambour ouvre la cérémonie, puis l’orchestre accompagne les danseurs masqués."],["Chants","Des chants en langue yoruba racontent l’histoire et les mythes du peuple yoruba-nago, avec poésie, ironie et satire."],["Masques sculptés","Ce ne sont pas des instruments, mais le centre du spectacle : ils portent souvent des figures d’animaux, comme le serpent ou l’oiseau."]],
+tchinkoume:[["Percussions","Elles portent le rythme ; selon certaines sources, une percussion sur l’eau est utilisée."],["Chants","Ils accompagnent la danse et le rythme."],["Instruments électriques","Dans le Tchink System, guitares et claviers s’ajoutent aux percussions."]],
+"balafon-senoufo":[["Ncegele","Xylophone de onze à vingt et une lames de bois, montées sur un cadre en forme de trapèze."],["Calebasses","De tailles différentes, placées sous les lames, elles amplifient le son ; leurs trous sont recouverts de filaments de cocons d’araignée pour enrichir le timbre."],["Baguettes","On frappe les lames avec des baguettes de bois munies d’un embout en caoutchouc."]],
+zaouli:[["Tambours","Ils soutiennent le rythme et la danse."],["Chants","Le chœur accompagne le danseur."],["Masque","Ce n’est pas un instrument, mais le cœur de la danse : il porte la tradition et le rôle du personnage."]],
+ziglibithy:[["Guitare électrique","Elle reprend les motifs des chants et des danses bété."],["Batterie","Elle donne un rythme soutenu et dansant."],["Percussions","Elles gardent le lien avec la tradition."]],
+zouglou:[["Voix","Le chant collectif est au centre, avec des refrains que tout le monde reprend."],["Percussions","Tambours qui lancent et soutiennent le rythme."],["Guitare","Elle accompagne la mélodie."]],
+"coupe-decale":[["Boîte à rythmes","Elle donne des rythmes rapides et dansants."],["Synthétiseurs","Ils créent les mélodies et les sons électroniques."],["Voix","Les chanteurs et l’animateur (l’atalaku) lancent des cris et des slogans."]],
+dununba:[["Djembé","Tambour en forme de calice, recouvert d’une peau de chèvre et joué à mains nues."],["Dunun","Tambour cylindrique joué avec une baguette, en trois tailles : kenkeni, sangban et dununba."],["Cloche","Petite cloche en métal qui marque le repère du rythme."]],
+highlife:[["Guitare","Jouée en arpèges, elle porte la mélodie."],["Cuivres","Trompette et saxophone, hérités des fanfares."],["Percussions","Cloches et hochets qui donnent le pouls de la danse."]],
+afrobeat:[["Batterie","Le jeu fluide et syncopé de Tony Allen en est la colonne vertébrale."],["Cuivres","Saxophones et trompettes répètent des motifs puissants."],["Claviers","Orgue ou piano électrique, pour les couleurs et les solos."],["Shekere","Calebasse entourée d’un filet de perles, secouée ou frappée."]],
+mbalax:[["Sabar","Tambour wolof joué avec une main et une baguette."],["Tama","Tambour d’aisselle : on change sa hauteur en serrant les cordes."],["Guitare, claviers et basse","Ils relient les tambours à la musique moderne."]],
+rumba:[["Guitares","Électriques, elles tissent des mélodies qui se répondent."],["Voix","Les chanteurs alternent solos et chœurs."],["Congas et maracas","Percussions héritées des influences cubaines."],["Cuivres","Saxophones et trompettes dans les grands orchestres."]],
+soukous:[["Guitare solo","Elle joue le sebene, la partie rapide qui lance la danse."],["Guitare rythmique","Alterne accords courts et motifs serrés."],["Basse et batterie","Elles tiennent un tempo rapide et sec."]],
+makossa:[["Basse","Très mélodique, elle donne le groove."],["Guitares","Des motifs rythmiques serrés."],["Saxophone et cuivres","Comme dans le jeu de Manu Dibango."],["Batterie","Un rythme souple et dansant."]],
+taarab:[["Oud","Luth à cordes pincées, d’origine arabe."],["Qanûn","Cithare à cordes pincées, posée sur les genoux."],["Violons","Ils jouent de longues lignes mélodiques."],["Tambours","Ils marquent le rythme de la danse."]],
+benga:[["Guitare","Jeu rapide qui reprend les motifs du nyatiti."],["Nyatiti","Lyre luo à huit cordes, source d’inspiration."],["Basse et batterie","Elles soutiennent un rythme vif."]],
+ethiojazz:[["Vibraphone","Instrument à lames métalliques joué avec des mailloches, très présent chez Mulatu Astatke."],["Krar","Lyre éthiopienne à cinq ou six cordes."],["Cuivres","Saxophones et trompettes."],["Congas","Percussions qui apportent le côté latin."]],
+mbaqanga:[["Guitare","Motifs répétitifs et chantants."],["Basse électrique","Très mélodique, elle mène la danse."],["Saxophone","Mélodies fluides inspirées du jazz."],["Voix","Chœurs féminins et voix d’homme très grave."]],
+gqom:[["Boîte à rythmes","Grosse caisse lourde et sons secs."],["Ordinateur","Un logiciel de musique sert à composer et assembler les sons."],["Voix","Slogans courts, souvent scandés."]],
+gnawa:[["Guembri","Luth basse à trois cordes, à la caisse recouverte de peau, au son profond."],["Qraqeb","Castagnettes métalliques jouées par paires."],["Tbel","Grand tambour utilisé lors des processions."],["Voix","Chants en appel et réponse, répétés pendant la transe."]],
+rai:[["Gasba","Flûte de roseau au son chaud."],["Guellal","Tambour en terre cuite joué à la main."],["Synthétiseur","Arrivé dans les années 1980, il a modernisé le genre."],["Boîte à rythmes","Pour un son de danse plus électrique."]]};
+var app=document.getElementById("app"),filter=-1,timer=null;
+function el(t,c,x,p){var e=document.createElement(t);if(c)e.className=c;if(typeof x==="string")e.textContent=x;if(p)p.appendChild(e);return e}
+
+var PAT=[0,2,4,5,7,9,11],NS="http://www.w3.org/2000/svg",dots=[],step=0,ctx=null;
+function pt(i){var a=i/12*2*Math.PI-Math.PI/2;return[130+98*Math.cos(a),130+98*Math.sin(a)]}
+function ring(p){
+ var s=document.createElementNS(NS,"svg");s.setAttribute("viewBox","0 0 260 260");s.setAttribute("role","img");s.setAttribute("aria-label","Cercle de douze pulsations, sept sont frappées");
+ var po=document.createElementNS(NS,"polygon");po.setAttribute("points",PAT.map(function(i){return pt(i).join(",")}).join(" "));
+ po.setAttribute("fill","none");po.setAttribute("stroke","var(--line)");po.setAttribute("stroke-width","2");s.appendChild(po);
+ dots=[];for(var i=0;i<12;i++){var c=document.createElementNS(NS,"circle"),q=pt(i),on=PAT.indexOf(i)>-1;
+  c.setAttribute("cx",q[0]);c.setAttribute("cy",q[1]);c.setAttribute("r",on?14:8);c.setAttribute("class","dot");
+  c.setAttribute("fill",on?"var(--a)":"var(--card)");c.setAttribute("stroke",on?"var(--a)":"var(--soft)");c.setAttribute("stroke-width","2");s.appendChild(c);dots.push(c)}
+ p.appendChild(s);
+}
+function reset(){dots.forEach(function(d,i){d.setAttribute("stroke",PAT.indexOf(i)>-1?"var(--a)":"var(--soft)");d.setAttribute("stroke-width","2")})}
+function click(){try{ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();var o=ctx.createOscillator(),g=ctx.createGain();
+ o.type="triangle";o.frequency.value=900;g.gain.setValueAtTime(.4,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.18);
+ o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.2)}catch(e){}}
+function tick(){dots.forEach(function(d,i){var on=PAT.indexOf(i)>-1;d.setAttribute("stroke",i===step?"var(--b)":(on?"var(--a)":"var(--soft)"));d.setAttribute("stroke-width",i===step?"5":"2")});
+ if(PAT.indexOf(step)>-1)click();step=(step+1)%12}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+
+var LISTEN={
+zaouli:[["UNESCO : vidéo du Zaouli (© Office ivoirien du patrimoine culturel, 2015)","https://ich.unesco.org/en/video/41021","vidéo, sur le site de l’UNESCO"],["Archives CNRS–Musée de l’Homme : Musique gouro de Côte d’Ivoire (Michel Vuylsteke, 1968-1969, éd. OCORA)","https://archives.crem-cnrs.fr/archives/collections/CNRSMH_E_1991_003_002/","notice seulement, enregistrement sous droits ; musique gouro en général, pas spécifiquement le zaouli"]],
+"balafon-senoufo":[["UNESCO : vidéo sur le balafon des communautés sénoufo","https://ich.unesco.org/en/video/06592","vidéo, sur le site de l’UNESCO"],["Archives CNRS–Musée de l’Homme : Orchestre de xylophones (Hugo Zemp, The Music of the Senufo)","https://archives.crem-cnrs.fr/archives/items/CNRSMH_E_1970_008_001_001/","notice seulement"],["Archives CNRS–Musée de l’Homme : Échelles de xylophones, Nafoun, Côte d’Ivoire (1998)","https://archives.crem-cnrs.fr/archives/items/CNRSMH_I_2001_002_001_07/","notice seulement"]],
+gelede:[["UNESCO : page du Gèlèdè, avec vidéo de présentation","https://ich.unesco.org/en/RL/gelede-oral-heritage-00002",""]]};
+var AUDIO={};
+var PAYS={dununba:["Guinée","Mali"],highlife:["Ghana","Nigeria"],afrobeat:["Nigeria"],mbalax:["Sénégal"],zaouli:["Côte d’Ivoire"],ziglibithy:["Côte d’Ivoire"],zouglou:["Côte d’Ivoire"],"coupe-decale":["Côte d’Ivoire"],gelede:["Nigeria","Bénin","Togo"],tchinkoume:["Bénin"],"balafon-senoufo":["Côte d’Ivoire","Mali","Burkina Faso"],rumba:["RDC","Congo-Brazzaville"],soukous:["RDC"],makossa:["Cameroun"],taarab:["Tanzanie","Kenya"],benga:["Kenya"],ethiojazz:["Éthiopie"],mbaqanga:["Afrique du Sud"],gqom:["Afrique du Sud"],gnawa:["Maroc"],rai:["Algérie"]};
+function norm(s){return String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}return null}
+function favs(){try{return JSON.parse(ls("ar-fav")||"[]")}catch(e){return[]}}
+function idx(s){var k=-1;R.forEach(function(r,i){if(r[0]===s)k=i});return k}
+function allPays(){var m={};Object.keys(PAYS).forEach(function(s){if(idx(s)<0)return;PAYS[s].forEach(function(c){(m[c]=m[c]||[]).push(s)})});return m}
+function card(r,p){var a=el("a","card",0,p);a.href="#"+r[0];var t=el("h3",0,r[1],a);if(D[r[0]])el("span","badge","Fiche vérifiée",t);el("span",0,r[3]+" · "+r[4],a);return a}
+function tile(k,t,s,p){var a=el("a","tile",0,p);a.href="#"+k;el("h3",0,t,a);el("span",0,s,a)}
+function searchBox(p){
+ var inp=el("input","srch",0,p);inp.type="search";inp.placeholder="Rechercher un rythme, un instrument, un pays…";inp.setAttribute("aria-label","Rechercher");
+ var out=el("div","list",0,p);
+ inp.oninput=function(){var q=norm(inp.value.trim());out.textContent="";if(q.length<2)return;var n=0;
+  R.forEach(function(r){var hay=norm([r[1],r[3],r[5],r[6],r[7],H[r[0]]||"",(I[r[0]]||[]).map(function(x){return x[0]}).join(" ")].join(" "));if(hay.indexOf(q)>-1){card(r,out);n++}});
+  if(!n)el("p","note","Aucun résultat pour cette recherche.",out)}
+}
+function ringBlock(p){
+ var sec=el("section","ring",0,p);ring(sec);
+ var b=el("button","play","Écouter la cloche à 12 pulsations",sec);
+ el("p",0,"Illustration générée dans la page (pas un enregistrement) : motif de cloche très répandu en Afrique de l’Ouest, 7 pulsations frappées sur 12.",sec);
+ b.onclick=function(){if(timer){stop();b.textContent="Écouter la cloche à 12 pulsations";reset()}else{step=0;tick();timer=setInterval(tick,190);b.textContent="Arrêter"}};
+}
+function head(t,lead){app.textContent="";document.title=t+" · AFRO-RYTHMES";el("h1",0,t,app);if(lead)el("p","lead",lead,app)}
+function home(){
+ app.textContent="";document.title="AFRO-RYTHMES · Créé par Brou Ange";
+ logo();el("h1",0,"AFRO-RYTHMES",app);
+ var by=el("p","by",0,app),al=el("a",0,"Créé par Brou Ange",by);al.href="#auteur";
+ el("p","lead","Une bibliothèque vivante du patrimoine musical africain : rythmes, instruments, histoire et cultures, avec des sources citées.",app);
+ searchBox(app);
+ var g=el("div","grid",0,app),np=Object.keys(allPays()).length;
+ tile("pays","Découvrir les pays africains",np+" pays déjà documentés sur 54",g);
+ tile("rythmes","Rythmes à découvrir",R.length+" rythmes et traditions",g);
+ tile("instruments","Instruments traditionnels","Bibliothèque en construction",g);
+ tile("histoire","Histoire et patrimoine","Origines et contextes",g);
+ tile("ecouter","Écouter les rythmes","Bibliothèque audio en préparation",g);
+ tile("assistant","Assistant AFRO-RYTHMES","Bientôt disponible",g);
+ var f=favs().filter(function(s){return idx(s)>-1});
+ if(f.length){el("h2",0,"Mes favoris",app);var fl=el("div","list",0,app);f.forEach(function(s){card(R[idx(s)],fl)})}
+ el("h2",0,"Fiches vérifiées",app);var l2=el("div","list",0,app);
+ R.forEach(function(r){if(D[r[0]])card(r,l2)});
+ var more=el("a","back","Voir tous les rythmes →",app);more.href="#rythmes";
+ el("h2",0,"Un motif pour commencer",app);ringBlock(app);
+ el("footer",0,"AFRO-RYTHMES — Créé par Brou Ange. Les fiches marquées « vérifiée » citent leurs sources ; les autres sont en cours de vérification.",app);
+}
+function rythmes(){
+ head("Encyclopédie des rythmes","Chaque fiche présente l’histoire, les instruments et la place du rythme dans sa culture.");
+ searchBox(app);
+ var ch=el("div","chips",0,app),list=el("div","list",0,app);
+ function draw(){list.textContent="";R.forEach(function(r){if(filter>-1&&r[2]!==filter)return;card(r,list)});Array.prototype.forEach.call(ch.children,function(c,i){c.setAttribute("aria-pressed",String(i-1===filter))})}
+ ["Tous"].concat(REG).forEach(function(n,i){var c=el("button","chip",n,ch);c.onclick=function(){filter=i-1;draw()}});draw();
+}
+function pays(){
+ var m=allPays(),ks=Object.keys(m).sort(function(a,b){return a.localeCompare(b,"fr")});
+ head("Pays africains",ks.length+" pays sont déjà documentés sur les 54 de l’Afrique. Les autres seront ajoutés avec leurs sources.");
+ var l=el("div","list",0,app);
+ ks.forEach(function(c){var d=el("div","card",0,l);el("h3",0,c,d);var s=el("span",0,0,d);m[c].forEach(function(sl,i){if(i)s.appendChild(document.createTextNode(" · "));var a=el("a",0,R[idx(sl)][1],s);a.href="#"+sl})});
+}
+function instruments(){
+ var m={};
+ Object.keys(I).forEach(function(s){if(idx(s)<0)return;I[s].forEach(function(x){var k=norm(x[0]);if(/^(voix|chant|masque|ordinateur)/.test(k))return;if(!m[k])m[k]={n:x[0],d:x[1],r:[]};if(m[k].r.indexOf(s)<0)m[k].r.push(s)})});
+ var ks=Object.keys(m).sort();
+ head("Instruments traditionnels",ks.length+" instruments sont présentés avec les rythmes où ils interviennent. Les fiches complètes (matériaux, fabrication, technique de jeu) sont en préparation.");
+ var l=el("div","list",0,app);
+ ks.forEach(function(k){var d=el("div","card",0,l);el("h3",0,m[k].n,d);el("p",0,m[k].d,d);var s=el("span",0,"Rythmes : ",d);m[k].r.forEach(function(sl,i){if(i)s.appendChild(document.createTextNode(" · "));var a=el("a",0,R[idx(sl)][1],s);a.href="#"+sl})});
+}
+function histoire(){
+ head("Histoire et origines","Un aperçu de l’origine de chaque rythme. Ouvre une fiche pour lire la suite.");
+ var l=el("div","list",0,app);
+ R.forEach(function(r){var d=el("div","card",0,l),t=el("h3",0,0,d),a=el("a",0,r[1],t);a.href="#"+r[0];var x=H[r[0]]||"";if(x.length>170)x=x.slice(0,170).replace(/\s+\S*$/,"")+"…";el("p",0,x,d)});
+}
+function ecouter(){
+ head("Écouter les rythmes","La bibliothèque audio est en préparation. Chaque enregistrement sera ajouté avec sa source, son crédit et seulement si sa diffusion est autorisée.");
+ el("p","txt","Nous n’ajoutons jamais un enregistrement sans autorisation, ni une musique moderne présentée comme traditionnelle. Quand l’intégration n’est pas permise, la fiche renverra vers la source d’origine.",app);
+ el("p","txt","En attendant, les artistes cités dans « À écouter » sur chaque fiche permettent d’entendre ces musiques à la source. La cloche à 12 pulsations de l’accueil est une illustration générée, pas un enregistrement.",app);
+ var l=el("div","list",0,app);
+ R.forEach(function(r){var n=(AUDIO[r[0]]||[]).length;var a=card(r,l);if(n)el("p",0,n+" enregistrement(s) vérifié(s)",a);else if(LISTEN[r[0]])el("p",0,"Liens d’écoute à la source",a)});
+}
+function assistant(){
+ head("Assistant AFRO-RYTHMES","Bientôt disponible.");
+ el("p","txt","L’assistant répondra aux questions sur les rythmes, les instruments et les cultures musicales africaines, en s’appuyant d’abord sur les fiches vérifiées de l’application, en citant ses sources et en indiquant ce qui est discuté ou inconnu.",app);
+ el("p","txt","Il demande un service externe (accès sécurisé et serveur) qui n’est pas encore en place. En attendant, utilise la recherche :",app);
+ searchBox(app);
+}
+function audioBox(r){
+ var a=AUDIO[r[0]]||[];el("h2",0,"Écouter",app);
+ if(!a.length){var L=LISTEN[r[0]]||[];el("p","note","Aucun enregistrement n’est intégré ici : sa réutilisation n’est pas autorisée ou n’a pas été vérifiée."+(L.length?" Pour écouter ou voir à la source :":" Les artistes cités dans « À écouter » permettent de l’entendre à la source."),app);if(L.length){var ul2=el("ul","src",0,app);L.forEach(function(x){var li=el("li",0,0,ul2);var a2=el("a",0,x[0],li);a2.href=x[1];a2.target="_blank";a2.rel="noopener";if(x[2])li.appendChild(document.createTextNode(" — "+x[2]))})}return}
+ a.forEach(function(x){var box=el("div","audio",0,app);el("h3",0,x.titre,box);el("span",0,[x.pays,x.communaute,x.artiste].filter(Boolean).join(" · "),box);var au=document.createElement("audio");au.controls=true;au.preload="none";au.src=x.url;box.appendChild(au);el("span",0,"Source : "+x.source+(x.credit?" — "+x.credit:""),box)});
+}
+function favBtn(s){
+ var b=el("button","fav",0,app);
+ function lab(){b.textContent=favs().indexOf(s)>-1?"★ Dans mes favoris":"☆ Ajouter aux favoris"}lab();
+ b.onclick=function(){var f=favs(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);ls("ar-fav",JSON.stringify(f));lab()};
+}
+var NAV=[["accueil","Accueil"],["rythmes","Rythmes"],["pays","Pays"],["instruments","Instruments"],["histoire","Histoire"],["ecouter","Écouter"],["assistant","Assistant"]];
+function setSize(n){n=Math.max(80,Math.min(150,n));document.documentElement.style.fontSize=n+"%";ls("ar-size",String(n))}
+function setTheme(t){document.documentElement.setAttribute("data-theme",t);ls("ar-theme",t)}
+function bar(){
+ var b=document.getElementById("bar");b.textContent="";
+ var row=el("nav","navrow",0,b);NAV.forEach(function(n){var a=el("a","nv",n[1],row);a.href="#"+n[0];a.setAttribute("data-k",n[0])});
+ var c=el("div","ctl",0,b);
+ var m=el("button","cb","A−",c);m.setAttribute("aria-label","Réduire la taille du texte");m.onclick=function(){setSize((parseInt(ls("ar-size")||"100",10))-10)};
+ var p=el("button","cb","A+",c);p.setAttribute("aria-label","Agrandir la taille du texte");p.onclick=function(){setSize((parseInt(ls("ar-size")||"100",10))+10)};
+ var t=el("button","cb","◐",c);t.setAttribute("aria-label","Changer entre mode clair et mode sombre");
+ t.onclick=function(){var cur=document.documentElement.getAttribute("data-theme")||(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");setTheme(cur==="dark"?"light":"dark")};
+ var s=ls("ar-size");if(s)setSize(parseInt(s,10));var th=ls("ar-theme");if(th)setTheme(th);
+}
+function mark(k){Array.prototype.forEach.call(document.querySelectorAll("#bar .nv"),function(a){if(a.getAttribute("data-k")===k)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")})}
+function detail(i){
+ var r=R[i];app.textContent="";document.title=r[1]+" · Rythmes d’Afrique";
+ var back=el("a","back","Tous les rythmes",app);back.href="#rythmes";
+ el("h1",0,r[1],app);el("p","tag",REG[r[2]],app);favBtn(r[0]);
+ el("p","txt",r[6],app);el("h2",0,"Son histoire",app);el("p","txt",H[r[0]],app);el("h2",0,"Sa place dans la culture",app);el("p","txt",S[r[0]],app);audioBox(r);deep(r[0]);el("h2",0,"Les instruments",app);var ul=el("dl",0,0,app);(I[r[0]]||[]).forEach(function(x){var d=el("div",0,0,ul);el("dt",0,x[0],d);el("dd",0,x[1],d)});
+ var dl=el("dl",0,0,app);
+ [["Pays",r[3]],["Époque",r[4]],["À écouter",r[7]]].forEach(function(x){var d=el("div",0,0,dl);el("dt",0,x[0],d);el("dd",0,x[1],d)});
+ srcs(r[0]);var nav=el("div","nav",0,app),p=R[(i+R.length-1)%R.length],n=R[(i+1)%R.length];
+ var a1=el("a",0,"← "+p[1],nav);a1.href="#"+p[0];var a2=el("a",0,n[1]+" →",nav);a2.href="#"+n[0];var ft=el("footer",0,0,app);var fa=el("a",0,"Application créée par BROU ANGE",ft);fa.href="#auteur";
+}
+var LOGO='<svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><ellipse cx="32" cy="15" rx="16" ry="5.5" fill="#F5F0FA"/><path d="M16 15C18 30 25 34 25 43L22 56H42L39 43C39 34 46 30 48 15Z" fill="#2A1233"/><path d="M20 20L30 31M44 20L34 31M27 22L37 31M37 22L27 31" stroke="#C27A00" stroke-width="2" fill="none"/></svg>';
+function logo(){var d=el("div","logo",0,app);d.innerHTML=LOGO}
+function about(){
+ app.textContent="";document.title="BROU ANGE · Rythmes d’Afrique";
+ var back=el("a","back","Retour à l’accueil",app);back.href="#accueil";
+ logo();el("h1",0,"BROU ANGE",app);
+ el("p","tag","Musicien percussionniste | Étudiant en musicologie à l’INSAAC",app);
+ ["Brou Ange est un jeune musicien percussionniste ivoirien, passionné par l’univers musical et particulièrement attaché aux richesses rythmiques et culturelles de la musique africaine.",
+ "Étudiant en musicologie à l’Institut National Supérieur des Arts et de l’Action Culturelle (INSAAC), il développe ses connaissances musicales tout en approfondissant sa pratique instrumentale et sa compréhension des différentes expressions musicales.",
+ "À travers la percussion, il explore le langage du rythme, la puissance des sonorités et la richesse du patrimoine musical africain. Pour lui, la musique ne se limite pas à une succession de sons : elle est un moyen d’expression, de transmission, de partage et de connexion entre les peuples.",
+ "Curieux, passionné et animé par une volonté constante d’apprendre, Brou Ange aspire à perfectionner son art, à valoriser les rythmes traditionnels et à contribuer au rayonnement de la culture musicale africaine."
+ ].forEach(function(t){el("p","txt",t,app)});
+ el("h2",0,"Sa vision",app);
+ el("p","txt","Faire parler les rythmes, transmettre les émotions et faire vivre la richesse de la musique.",app);
+}
+function route(){
+ stop();var hs=location.hash.slice(1),i=idx(hs),key=hs||"accueil";
+ if(hs==="auteur")about();
+ else if(i>-1){detail(i);key="rythmes"}
+ else if(hs==="rythmes")rythmes();
+ else if(hs==="pays")pays();
+ else if(hs==="instruments")instruments();
+ else if(hs==="histoire")histoire();
+ else if(hs==="ecouter")ecouter();
+ else if(hs==="assistant")assistant();
+ else{home();key="accueil"}
+ mark(key);window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);bar();route();
+</script>
+</body>
+</html>
