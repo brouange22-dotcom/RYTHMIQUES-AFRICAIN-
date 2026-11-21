@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rythmes d’Afrique</title>
+<meta name="description" content="Découvre l’histoire, les instruments et les artistes des grands rythmes africains. Une application créée par BROU ANGE.">
+<meta name="theme-color" content="#F2A900">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rythmes d’Afrique">
+<meta property="og:description" content="Histoire, instruments et artistes des rythmes africains. Une application créée par BROU ANGE.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiNGMkE5MDAiLz48ZWxsaXBzZSBjeD0iMzIiIGN5PSIxNSIgcng9IjE2IiByeT0iNS41IiBmaWxsPSIjRjVGMEZBIi8+PHBhdGggZD0iTTE2IDE1QzE4IDMwIDI1IDM0IDI1IDQzTDIyIDU2SDQyTDM5IDQzQzM5IDM0IDQ2IDMwIDQ4IDE1WiIgZmlsbD0iIzJBMTIzMyIvPjxwYXRoIGQ9Ik0yMCAyMEwzMCAzMU00NCAyMEwzNCAzMU0yNyAyMkwzNyAzMU0zNyAyMkwyNyAzMSIgc3Ryb2tlPSIjQzI3QTAwIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+<link rel="apple-touch-icon" href="icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F0FA;--ink:#2A1233;--soft:#6A5778;--a:#C27A00;--b:#0E8077;--card:#FFFFFF;--line:#D9CCE6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B0F24;--ink:#F6EEF9;--soft:#B7A4C4;--a:#F2A900;--b:#2FC4B8;--card:#291736;--line:#43295A}}
+:root[data-theme="dark"]{--bg:#1B0F24;--ink:#F6EEF9;--soft:#B7A4C4;--a:#F2A900;--b:#2FC4B8;--card:#291736;--line:#43295A}
+*{box-sizing:border-box}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.55}
+main{max-width:720px;margin:0 auto;padding:28px 20px 48px}
+h1{font-size:clamp(2.2rem,9vw,3.6rem);line-height:1;margin:0 0 12px;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.5rem;margin:32px 0 12px}
+.lead{color:var(--soft);max-width:34em;margin:0 0 20px}
+a{color:inherit}
+.ring{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.ring svg{width:min(100%,280px);height:auto}
+.ring p{margin:0;font-size:.92rem;color:var(--soft);text-align:center;max-width:30em}
+button{font:inherit;cursor:pointer}
+.play{background:var(--a);color:#1B0F24;border:0;border-radius:999px;padding:10px 22px;font-weight:600}
+.play:focus-visible,.chip:focus-visible,a:focus-visible{outline:3px solid var(--b);outline-offset:2px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.chip{flex:none;background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px}
+.chip[aria-pressed="true"]{background:var(--b);border-color:var(--b);color:#fff}
+.list{margin-top:12px}
+.card{display:block;text-decoration:none;padding:14px 0;border-top:1px solid var(--line)}
+.card h3{margin:0;font-size:1.2rem}
+.card span{color:var(--soft);font-size:.92rem}
+.card:hover h3{color:var(--a)}
+.back{display:inline-block;margin-bottom:18px;font-weight:600;color:var(--b)}
+.tag{color:var(--a);font-weight:600;margin:0 0 18px}
+dl{margin:20px 0;border-top:1px solid var(--line)}
+dl div{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+dt{flex:0 0 120px;color:var(--soft);font-weight:600}
+dd{margin:0}
+.txt{font-size:1.08rem;max-width:34em}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:32px;font-weight:600}
+footer{margin-top:36px;color:var(--soft);font-size:.9rem}
+.by{color:var(--a);font-weight:600;margin:0 0 20px}
+.logo{width:56px;height:56px;border-radius:16px;background:var(--a);display:flex;align-items:center;justify-content:center;font-size:30px;margin-bottom:14px}
+@media (prefers-reduced-motion:no-preference){.dot{transition:r .12s}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+var REG=["Afrique de l’Ouest","Afrique centrale","Afrique de l’Est","Afrique australe","Afrique du Nord"];
+// slug, nom, région, pays, époque, instruments, texte, artistes
+var R=[
+["dununba","Dununba",0,"Guinée, Mali","Tradition ancienne","Djembé, trois dunun, cloches","Rythme emblématique des Mandingues, joué par trois dunun de tailles différentes qui dialoguent avec le djembé. On le présente souvent comme la danse des hommes forts.","Mamady Keïta"],
+["highlife","Highlife",0,"Ghana, Nigeria","Début du XXe siècle","Guitares, cuivres, percussions","Né sur la côte ouest-africaine, il associe mélodies de guitare, cuivres et percussions locales. Il accompagne les fêtes et les clubs, d’Accra à Lagos.","E. T. Mensah, Osita Osadebe"],
+["afrobeat","Afrobeat",0,"Nigeria","Fin des années 1960","Batterie, cuivres, claviers, percussions","Fela Kuti le développe en mêlant highlife, jazz, funk et percussions yoruba. Ses morceaux sont longs, hypnotiques, et portent souvent un message politique.","Fela Kuti, Tony Allen"],
+["mbalax","Mbalax",0,"Sénégal","Années 1970–80","Tambours sabar, guitares, claviers","Rythme sénégalais construit sur les tambours sabar, très présents dans les musiques wolof. Il a été popularisé dans le monde par Youssou N’Dour.","Youssou N’Dour, Thione Seck"],
+["rumba","Rumba congolaise",1,"RDC, Congo-Brazzaville","XXe siècle","Guitares, voix, section rythmique","Née dans la région du fleuve Congo, elle mêle traditions locales et influences cubaines. Elle est inscrite au patrimoine culturel immatériel de l’UNESCO depuis 2021.","Grand Kallé, Franco"],
+["soukous","Soukous",1,"RDC","Années 1960–80","Guitares, basse, batterie","Dérivé de la rumba, il accélère le tempo et met en avant des guitares aux motifs rapides. Il a fait danser toute l’Afrique, puis les clubs d’Europe.","Kanda Bongo Man, Tabu Ley Rochereau"],
+["makossa","Makossa",1,"Cameroun","Années 1960–70","Basse, guitares, cuivres, batterie","Style de Douala porté par une basse dansante et des cuivres. Le titre « Soul Makossa » de Manu Dibango (1972) l’a fait connaître au-delà de l’Afrique.","Manu Dibango, Petit Pays"],
+["taarab","Taarab",2,"Zanzibar, côte swahilie","Fin du XIXe siècle","Oud, qanûn, violons, percussions","Musique swahilie qui mêle influences arabes, indiennes et africaines. Les paroles poétiques parlent souvent d’amour et de la vie quotidienne.","Siti binti Saad, Bi Kidude"],
+["benga","Benga",2,"Kenya","Années 1950–60","Guitares, basse, percussions","Style des Luo, qui repose sur des guitares rapides et des motifs répétés. On l’associe aux orchestres de Nairobi et de la région du lac Victoria.","D. O. Misiani"],
+["ethiojazz","Éthio-jazz",2,"Éthiopie","À partir des années 1960","Vibraphone, orgue, cuivres, percussions","Mulatu Astatke l’a imaginé en combinant jazz, rythmes latins et gammes traditionnelles éthiopiennes. Le résultat est un son à la fois planant et dansant.","Mulatu Astatke, Hailu Mergia"],
+["mbaqanga","Mbaqanga",3,"Afrique du Sud","Années 1960","Guitare, basse, saxophone, voix","Né dans les townships, il mélange mélodies zouloues, jazz et rythmes urbains. Les chœurs de voix et la basse y tiennent une place centrale.","Mahlathini et les Mahotella Queens"],
+["gqom","Gqom",3,"Afrique du Sud (Durban)","Années 2010","Boîtes à rythmes, ordinateur","Né à Durban, il se caractérise par des rythmes sombres, minimalistes et très percussifs, faits pour la danse. Il se fabrique surtout sur ordinateur.","Distruction Boyz, DJ Lag"],
+["gnawa","Gnawa",4,"Maroc","Tradition ancienne","Guembri, qraqeb, voix","Musique de transe rituelle issue des confréries gnaoua. Elle repose sur un luth basse, des castagnettes métalliques et des chants répétés.","Maâlem Mahmoud Guinia"],
+["rai","Raï",4,"Algérie (Oran)","XXe siècle","Voix, synthétiseur, percussions","Chanson populaire née dans l’ouest algérien, longtemps jouée dans les cabarets. Elle est devenue connue dans le monde entier dans les années 1980–90.","Cheb Khaled, Cheb Mami"]
+];
+var H={
+dununba:"Le dununba vient du monde mandingue, une vaste zone d’Afrique de l’Ouest liée à l’ancien empire du Mali. Il se joue pour des fêtes et des cérémonies, et met en avant la force et le courage. Au XXe siècle, des ensembles comme les Ballets africains de Guinée ont fait connaître le djembé et ces rythmes à l’étranger. Aujourd’hui, des percussionnistes comme Mamady Keïta les enseignent dans le monde entier.",
+highlife:"Le highlife apparaît sur la côte du Ghana au début du XXe siècle, quand les guitares, les fanfares et les chants locaux se rencontrent. Son nom évoque les clubs où l’élite venait danser. Dans les années 1950, E. T. Mensah, surnommé le roi du highlife, le rend très populaire. Il gagne ensuite le Nigeria, où il inspire de nombreux orchestres, et il sert de base à l’afrobeat.",
+afrobeat:"Fela Kuti naît en 1938 au Nigeria. Après des études de musique à Londres, il découvre à Los Angeles, en 1969, les idées du mouvement noir américain. De retour à Lagos, il invente l’afrobeat avec le batteur Tony Allen. Ses concerts, au club le Shrine, durent des heures. Ses paroles critiquent le pouvoir et les injustices, et son influence dépasse aujourd’hui largement le Nigeria.",
+mbalax:"Dans les années 1960, la musique afro-cubaine est très écoutée à Dakar. Peu à peu, des musiciens sénégalais se tournent vers leurs propres traditions, en particulier le sabar, le tambour des fêtes wolof. Dans les années 1970-80, des groupes comme l’Étoile de Dakar de Youssou N’Dour mêlent ces tambours à des guitares et des claviers électriques : c’est le mbalax, mot qui désigne à l’origine l’accompagnement rythmique.",
+rumba:"À partir des années 1930-40, des disques cubains circulent à Kinshasa et Brazzaville et se mêlent aux rythmes locaux de chaque côté du fleuve Congo. Dans les années 1950-60, des orchestres comme African Jazz de Grand Kallé et l’OK Jazz de Franco la rendent immensément populaire. En 1960, « Indépendance Cha Cha » accompagne l’indépendance du Congo. L’UNESCO a inscrit la rumba congolaise à son patrimoine immatériel en 2021.",
+soukous:"Le mot vient du français « secouer ». Dans les années 1960-70, des musiciens comme Tabu Ley Rochereau et Dr Nico transforment la rumba, avec un tempo plus rapide et des guitares plus brillantes. Le sebene, longue partie de guitare propice à la danse, en devient la marque. Dans les années 1980, de nombreux artistes s’installent à Paris et font connaître le soukous en Europe.",
+makossa:"Le makossa naît à Douala, dans la communauté duala, et son nom évoque la danse. Dans les années 1960-70, des artistes comme Eboa Lotin lui donnent sa forme moderne. En 1972, « Soul Makossa » de Manu Dibango devient un succès à New York. Son refrain sera repris plus tard par Michael Jackson dans « Wanna Be Startin’ Somethin’ ».",
+taarab:"Le taarab naît à Zanzibar à la fin du XIXe siècle. Le sultan Barghash encourage une musique de cour inspirée de l’Égypte, qui se mêle ensuite aux traditions swahilies et indiennes. Son nom vient d’un mot arabe qui désigne l’émotion que provoque la musique. Dans les années 1920, la chanteuse Siti binti Saad enregistre en swahili et devient la première grande voix du genre.",
+benga:"Le benga naît chez les Luo, près du lac Victoria, dans les années 1950-60. Des guitaristes y adaptent à la guitare les motifs du nyatiti, la lyre traditionnelle luo. Le style est ensuite repris à Nairobi. D. O. Misiani et son groupe Shirati Jazz en sont des figures majeures, avec des paroles qui commentent la vie sociale et politique.",
+ethiojazz:"Mulatu Astatke, né à Jimma en 1943, étudie la musique à Londres puis aux États-Unis, où il découvre le jazz et les rythmes latins. De retour à Addis-Abeba, il les associe aux modes éthiopiens, des gammes à cinq notes comme le tezeta ou l’ambassel. La série de disques Éthiopiques et le film « Broken Flowers » (2005) ont fait découvrir ce son au monde entier.",
+mbaqanga:"Le mbaqanga naît dans les townships de Johannesburg dans les années 1960, à partir du marabi, du jazz et des mélodies zouloues. Son nom est un mot zoulou qui désigne un pain cuit à la vapeur. Sous l’apartheid, cette musique urbaine accompagne la vie quotidienne des townships. Mahlathini, surnommé le Lion de Soweto, et les Mahotella Queens l’ont fait connaître bien au-delà de l’Afrique du Sud.",
+gqom:"Le gqom apparaît au début des années 2010 dans les townships de Durban, comme Umlazi. De jeunes producteurs fabriquent des rythmes sur ordinateur avec des logiciels accessibles et les partagent par téléphone. Le mot vient du zoulou et évoque le tambour ou le choc. Sa basse lourde et son rythme sec ont ensuite voyagé jusque dans les clubs du monde entier.",
+gnawa:"Les Gnawa sont des confréries du Maroc, descendantes de personnes d’Afrique subsaharienne amenées de force au Maghreb. Leur musique sert dans la lila, une cérémonie de nuit, de transe et de guérison, qui mêle héritages africains et spiritualité soufie. Elle se joue en cycles, avec couleurs, encens et danses. Depuis 1998, le festival d’Essaouira lui donne une grande scène.",
+rai:"Le mot raï signifie « opinion » en arabe. Il naît autour d’Oran, dans les chants des bergers et des cheikhat, chanteuses populaires comme Cheikha Rimitti, qui abordent sans détour la vie, l’amour et la liberté. Dans les années 1970-80, les jeunes y ajoutent synthétiseurs et boîtes à rythmes. Cheb Khaled et Cheb Mami le font connaître dans le monde entier."};
+var I={
+dununba:[["Djembé","Tambour en forme de calice, recouvert d’une peau de chèvre et joué à mains nues."],["Dunun","Tambour cylindrique joué avec une baguette, en trois tailles : kenkeni, sangban et dununba."],["Cloche","Petite cloche en métal qui marque le repère du rythme."]],
+highlife:[["Guitare","Jouée en arpèges, elle porte la mélodie."],["Cuivres","Trompette et saxophone, hérités des fanfares."],["Percussions","Cloches et hochets qui donnent le pouls de la danse."]],
+afrobeat:[["Batterie","Le jeu fluide et syncopé de Tony Allen en est la colonne vertébrale."],["Cuivres","Saxophones et trompettes répètent des motifs puissants."],["Claviers","Orgue ou piano électrique, pour les couleurs et les solos."],["Shekere","Calebasse entourée d’un filet de perles, secouée ou frappée."]],
+mbalax:[["Sabar","Tambour wolof joué avec une main et une baguette."],["Tama","Tambour d’aisselle : on change sa hauteur en serrant les cordes."],["Guitare, claviers et basse","Ils relient les tambours à la musique moderne."]],
+rumba:[["Guitares","Électriques, elles tissent des mélodies qui se répondent."],["Voix","Les chanteurs alternent solos et chœurs."],["Congas et maracas","Percussions héritées des influences cubaines."],["Cuivres","Saxophones et trompettes dans les grands orchestres."]],
+soukous:[["Guitare solo","Elle joue le sebene, la partie rapide qui lance la danse."],["Guitare rythmique","Alterne accords courts et motifs serrés."],["Basse et batterie","Elles tiennent un tempo rapide et sec."]],
+makossa:[["Basse","Très mélodique, elle donne le groove."],["Guitares","Des motifs rythmiques serrés."],["Saxophone et cuivres","Comme dans le jeu de Manu Dibango."],["Batterie","Un rythme souple et dansant."]],
+taarab:[["Oud","Luth à cordes pincées, d’origine arabe."],["Qanûn","Cithare à cordes pincées, posée sur les genoux."],["Violons","Ils jouent de longues lignes mélodiques."],["Tambours","Ils marquent le rythme de la danse."]],
+benga:[["Guitare","Jeu rapide qui reprend les motifs du nyatiti."],["Nyatiti","Lyre luo à huit cordes, source d’inspiration."],["Basse et batterie","Elles soutiennent un rythme vif."]],
+ethiojazz:[["Vibraphone","Instrument à lames métalliques joué avec des mailloches, très présent chez Mulatu Astatke."],["Krar","Lyre éthiopienne à cinq ou six cordes."],["Cuivres","Saxophones et trompettes."],["Congas","Percussions qui apportent le côté latin."]],
+mbaqanga:[["Guitare","Motifs répétitifs et chantants."],["Basse électrique","Très mélodique, elle mène la danse."],["Saxophone","Mélodies fluides inspirées du jazz."],["Voix","Chœurs féminins et voix d’homme très grave."]],
+gqom:[["Boîte à rythmes","Grosse caisse lourde et sons secs."],["Ordinateur","Un logiciel de musique sert à composer et assembler les sons."],["Voix","Slogans courts, souvent scandés."]],
+gnawa:[["Guembri","Luth basse à trois cordes, à la caisse recouverte de peau, au son profond."],["Qraqeb","Castagnettes métalliques jouées par paires."],["Tbel","Grand tambour utilisé lors des processions."],["Voix","Chants en appel et réponse, répétés pendant la transe."]],
+rai:[["Gasba","Flûte de roseau au son chaud."],["Guellal","Tambour en terre cuite joué à la main."],["Synthétiseur","Arrivé dans les années 1980, il a modernisé le genre."],["Boîte à rythmes","Pour un son de danse plus électrique."]]};
+var app=document.getElementById("app"),filter=-1,timer=null;
+function el(t,c,x,p){var e=document.createElement(t);if(c)e.className=c;if(typeof x==="string")e.textContent=x;if(p)p.appendChild(e);return e}
+
+var PAT=[0,2,4,5,7,9,11],NS="http://www.w3.org/2000/svg",dots=[],step=0,ctx=null;
+function pt(i){var a=i/12*2*Math.PI-Math.PI/2;return[130+98*Math.cos(a),130+98*Math.sin(a)]}
+function ring(p){
+ var s=document.createElementNS(NS,"svg");s.setAttribute("viewBox","0 0 260 260");s.setAttribute("role","img");s.setAttribute("aria-label","Cercle de douze pulsations, sept sont frappées");
+ var po=document.createElementNS(NS,"polygon");po.setAttribute("points",PAT.map(function(i){return pt(i).join(",")}).join(" "));
+ po.setAttribute("fill","none");po.setAttribute("stroke","var(--line)");po.setAttribute("stroke-width","2");s.appendChild(po);
+ dots=[];for(var i=0;i<12;i++){var c=document.createElementNS(NS,"circle"),q=pt(i),on=PAT.indexOf(i)>-1;
+  c.setAttribute("cx",q[0]);c.setAttribute("cy",q[1]);c.setAttribute("r",on?14:8);c.setAttribute("class","dot");
+  c.setAttribute("fill",on?"var(--a)":"var(--card)");c.setAttribute("stroke",on?"var(--a)":"var(--soft)");c.setAttribute("stroke-width","2");s.appendChild(c);dots.push(c)}
+ p.appendChild(s);
+}
+function reset(){dots.forEach(function(d,i){d.setAttribute("stroke",PAT.indexOf(i)>-1?"var(--a)":"var(--soft)");d.setAttribute("stroke-width","2")})}
+function click(){try{ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();var o=ctx.createOscillator(),g=ctx.createGain();
+ o.type="triangle";o.frequency.value=900;g.gain.setValueAtTime(.4,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.18);
+ o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.2)}catch(e){}}
+function tick(){dots.forEach(function(d,i){var on=PAT.indexOf(i)>-1;d.setAttribute("stroke",i===step?"var(--b)":(on?"var(--a)":"var(--soft)"));d.setAttribute("stroke-width",i===step?"5":"2")});
+ if(PAT.indexOf(step)>-1)click();step=(step+1)%12}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+
+function home(){
+ app.textContent="";document.title="Rythmes d’Afrique";
+ logo();el("h1",0,"Rythmes d’Afrique",app);var by=el("p","by",0,app);var al=el("a",0,"Une application créée par BROU ANGE",by);al.href="#auteur";
+ el("p","lead","Un lieu pour découvrir les musiques d’Afrique : leur histoire, les instruments qui les font vivre et les artistes qui les portent. Choisis un rythme pour commencer.",app);
+ var sec=el("section","ring",0,app);ring(sec);
+ var b=el("button","play","Écouter la cloche à 12 pulsations",sec);
+ el("p",0,"Motif de cloche très répandu en Afrique de l’Ouest : 7 pulsations frappées sur 12.",sec);
+ b.onclick=function(){if(timer){stop();b.textContent="Écouter la cloche à 12 pulsations";reset()}else{step=0;tick();timer=setInterval(tick,190);b.textContent="Arrêter"}};
+ el("h2",0,"Choisir un rythme",app);
+ var ch=el("div","chips",0,app),list=el("div","list",0,app);
+ function draw(){
+  list.textContent="";
+  R.forEach(function(r){if(filter>-1&&r[2]!==filter)return;
+   var a=el("a","card",0,list);a.href="#"+r[0];el("h3",0,r[1],a);el("span",0,r[3]+" · "+r[4],a)});
+  Array.prototype.forEach.call(ch.children,function(c,i){c.setAttribute("aria-pressed",String(i-1===filter))});
+ }
+ ["Tous"].concat(REG).forEach(function(n,i){var c=el("button","chip",n,ch);c.onclick=function(){filter=i-1;draw()}});
+ draw();
+ el("footer",0,"Ces musiques sont liées à des communautés, des cérémonies et des histoires vivantes. Écoute-les avec curiosité et respect, et cherche les artistes cités pour les entendre à la source.",app);
+}
+function detail(i){
+ var r=R[i];app.textContent="";document.title=r[1]+" · Rythmes d’Afrique";
+ var back=el("a","back","Tous les rythmes",app);back.href="#accueil";
+ el("h1",0,r[1],app);el("p","tag",REG[r[2]],app);
+ el("p","txt",r[6],app);el("h2",0,"Son histoire",app);el("p","txt",H[r[0]],app);el("h2",0,"Les instruments",app);var ul=el("dl",0,0,app);(I[r[0]]||[]).forEach(function(x){var d=el("div",0,0,ul);el("dt",0,x[0],d);el("dd",0,x[1],d)});
+ var dl=el("dl",0,0,app);
+ [["Pays",r[3]],["Époque",r[4]],["À écouter",r[7]]].forEach(function(x){var d=el("div",0,0,dl);el("dt",0,x[0],d);el("dd",0,x[1],d)});
+ var nav=el("div","nav",0,app),p=R[(i+R.length-1)%R.length],n=R[(i+1)%R.length];
+ var a1=el("a",0,"← "+p[1],nav);a1.href="#"+p[0];var a2=el("a",0,n[1]+" →",nav);a2.href="#"+n[0];var ft=el("footer",0,0,app);var fa=el("a",0,"Application créée par BROU ANGE",ft);fa.href="#auteur";
+}
+var LOGO='<svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><ellipse cx="32" cy="15" rx="16" ry="5.5" fill="#F5F0FA"/><path d="M16 15C18 30 25 34 25 43L22 56H42L39 43C39 34 46 30 48 15Z" fill="#2A1233"/><path d="M20 20L30 31M44 20L34 31M27 22L37 31M37 22L27 31" stroke="#C27A00" stroke-width="2" fill="none"/></svg>';
+function logo(){var d=el("div","logo",0,app);d.innerHTML=LOGO}
+function about(){
+ app.textContent="";document.title="BROU ANGE · Rythmes d’Afrique";
+ var back=el("a","back","Retour à l’accueil",app);back.href="#accueil";
+ logo();el("h1",0,"BROU ANGE",app);
+ el("p","tag","Musicien percussionniste | Étudiant en musicologie à l’INSAAC",app);
+ ["Brou Ange est un jeune musicien percussionniste ivoirien, passionné par l’univers musical et particulièrement attaché aux richesses rythmiques et culturelles de la musique africaine.",
+ "Étudiant en musicologie à l’Institut National Supérieur des Arts et de l’Action Culturelle (INSAAC), il développe ses connaissances musicales tout en approfondissant sa pratique instrumentale et sa compréhension des différentes expressions musicales.",
+ "À travers la percussion, il explore le langage du rythme, la puissance des sonorités et la richesse du patrimoine musical africain. Pour lui, la musique ne se limite pas à une succession de sons : elle est un moyen d’expression, de transmission, de partage et de connexion entre les peuples.",
+ "Curieux, passionné et animé par une volonté constante d’apprendre, Brou Ange aspire à perfectionner son art, à valoriser les rythmes traditionnels et à contribuer au rayonnement de la culture musicale africaine."
+ ].forEach(function(t){el("p","txt",t,app)});
+ el("h2",0,"Sa vision",app);
+ el("p","txt","Faire parler les rythmes, transmettre les émotions et faire vivre la richesse de la musique.",app);
+}
+function route(){
+ stop();var h=location.hash.slice(1),i=-1;
+ R.forEach(function(r,k){if(r[0]===h)i=k});
+ if(h==="auteur")about();else if(i>-1)detail(i);else home();
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
